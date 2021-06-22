@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'djoser',
     'corsheaders',
     'rest_framework_simplejwt',
-    'rest_framework_simplejwt.token_blacklist'
+    'rest_framework_simplejwt.token_blacklist',
+    'django-heroku',
 ]
 
 
@@ -214,4 +215,5 @@ CORS_ORIGIN_ALLOW_ALL = True
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
+# Activate Django-Heroku.
 django_heroku.settings(locals())
